@@ -18,7 +18,7 @@ public class GatewayConfig {
         return builder.routes()
                 .route("user-service", r -> r.path("/users/**")
                         .filters(f -> f.filter(filter))
-                        .uri("/lb//user-service"))
+                        .uri("lb://user-service"))
                 .route("admin-service", r -> r.path("/admin/**")
                         .filters(f -> f.filter(filter))
                         .uri("lb://auth-service"))

@@ -8,4 +8,4 @@ spring:
       server:
         git:
           clone-on-start: true
-          uri:
+          uri: https://github.com/VBao/demo-microservice.git

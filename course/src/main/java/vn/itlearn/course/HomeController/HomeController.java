@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import vn.itlearn.course.entities.Gallery;
+import vn.itlearn.course.entities.Course;
 
 import java.util.List;
 
@@ -25,12 +25,12 @@ public class HomeController {
     }
 
     @RequestMapping("/{id}")
-    public Gallery getGallery(@PathVariable final int id){
-        Gallery gallery=new Gallery();
-        gallery.setId(id);
+    public Course getGallery(@PathVariable final int id){
+        Course course =new Course();
+        course.setId(id);
         List images=restTemplate.getForObject("http://AccountService/images/", List.class);
-        gallery.setImages(images);
-        return gallery;
+        course.setImages(images);
+        return course;
     }
 
     @RequestMapping("/admin")

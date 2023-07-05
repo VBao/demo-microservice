@@ -2,13 +2,13 @@ package vn.itlearn.course.entities;
 
 import java.util.List;
 
-public class Gallery {
+public class Course {
     private int id;
     private List<Object> images;
 
-    public Gallery() {
+    public Course() {
     }
-    public Gallery(int id) {
+    public Course(int id) {
         this.id = id;
     }
     public int getId() {

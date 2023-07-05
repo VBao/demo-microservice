@@ -9,6 +9,7 @@
         <module>gateway</module>
         <module>eureka-server</module>
         <module>config-service</module>
+        <module>auth-service</module>
         <module>account</module>
         <module>course</module>
     </modules>
